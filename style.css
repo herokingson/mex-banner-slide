@@ -1,0 +1,306 @@
+.square {
+    position: relative;
+    width: 100%;
+  }
+  .square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+.mex-compare-list {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #EBEBEB;
+    text-align: center;
+    z-index: 9999;
+}
+
+.mex-compare-list ul {
+
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    padding: 10px;
+    margin: auto;
+}
+
+.mex-compare-list ul li {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    padding: 0 10px;
+
+}
+
+.mex-compare-list ul li span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 14px;
+
+    padding: 0px 5px;
+    border-radius: 50%;
+    font-weight: 700;
+    border: solid 2px #000000;
+    cursor: pointer;
+    color: #000000;
+}
+
+.mex-compare-list ul li.compare-items div {
+    display: inline-block;
+    padding: 15px;
+    width: 65px;
+    height: 65px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 20px;
+    position: relative;
+    background-position: center;
+    background-size: contain;
+}
+
+.mex-compare-list ul li.compare-des {
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+
+.mex-compare-list ul li.compare-btn {
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+
+
+
+.mex-compare-button {
+    border: solid 1px #000000;
+    padding: 2.5px 25px;
+    margin: 0;
+    border-radius: 25px;
+
+
+}
+
+#mex-compare-view{
+    width: 100%;
+    display: inline-block;
+ 
+}
+#mex-compare-view ul{
+    margin: 0;
+    padding: 0;
+}
+.mex-compare-left{
+    width: 20%;
+    float: left;
+  
+
+}
+.mex-compare-right{
+    width: 80%;
+    float: left;
+    display: flex;
+    overflow-x: auto;
+  
+}
+
+ul.mex-compare-head{
+    width: 100%;
+    display: inline-block
+}
+ul.mex-compare-head li{
+    width: 100%;
+    display: block;
+    padding: 10px 15px;
+    padding-top: 14px;
+    height: 50px;
+    background-color: #000000;
+    border: solid 1px #000000;
+    overflow: hidden;
+    float: left;
+    color: #ffffff;
+    font-size: 16px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+
+}
+ul.mex-compare-head li:first-child{
+    border: none;
+    height: 400px;
+    background: none;
+    position: relative;
+   
+}
+ul.mex-compare-head li:first-child h3{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    bottom: 0;  
+}
+ul.mex-compare-items{
+    width: 25%;
+    display: block;
+    float: left;
+    min-width: 200px;
+}
+ul.mex-compare-items li{
+    width: 100%;
+    text-align:center;
+    display: block;
+    padding: 10px 15px;
+    padding-top: 14px;
+    height: 50px;
+    border: solid 1px #eceaea;
+    border-bottom: none;
+    float: left;
+    font-size: 16px;
+        -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+   
+}
+ul.mex-compare-items li.bg-h{
+  
+    background-color: rgba(0,0,0,.01);
+  
+   
+}
+
+
+ul.mex-compare-items li:first-child{
+    border: none;
+    height: 400px;
+   
+}
+
+ul.mex-compare-items li:last-child{
+    border-bottom: solid 1px #eceaea;
+}
+.mex-product-image{
+    overflow: hidden;
+    border-radius: 5px;
+}
+.mex-product-image img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.mex-product{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border:1px solid #cccccc;
+    border-radius:15px;
+}
+.mex-product .mex-product-image-container{
+    display: inline-block;
+    width: 100%;
+
+    position: relative;
+}
+.mex-product .mex-product-image-container .mex-product-image  img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.mex-product-title a{
+    color: #000000;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    height: 50px;
+    font-size: 16px;
+}
+.mex-product-sku{
+    font-size: 10px;
+}
+.mex-icon{
+    width: 35px;
+    height: 35px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 2px;
+    border-radius: 50%;
+    border: solid 1px #000000;
+    text-align: center;
+    cursor: pointer;
+   
+}
+.mex-button-1{
+    font-size: 16px;
+    padding: 7.5px 30px;
+    border-radius: 30px;
+    border: solid 1px #000000;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+}
+.mex-button-1:hover{
+    background-color:#000000;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .mex-compare-list ul li {
+        width: 100%;
+
+    }
+
+    .mex-compare-list ul li.compare-des {
+        padding-top: 0px;
+
+
+    }
+
+    .mex-compare-list ul li.compare-btn {
+        padding-top: 5px;
+        padding-bottom: 0px;
+
+
+    }
+    .mex-compare-left{
+        width: 30%;
+    
+      
+    
+    }
+    .mex-compare-right{
+        width: 70%;
+     
+      
+    }
+    ul.mex-compare-head li{
+   
+        font-size: 14px;
+        height: 45px;
+         padding: 10px 5px;
+    
+    }
+    ul.mex-compare-items li{
+   
+        font-size: 14px;
+        height: 45px;
+    
+    }
+    ul.mex-compare-head li:first-child,ul.mex-compare-items li:first-child{
+      
+        height: 350px;
+      
+       
+    }
+ 
+
+}

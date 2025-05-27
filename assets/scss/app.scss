@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$primary : #000;
+
+.slides {
+	width: 100%;
+	// height: 100dvh;
+	position: relative;
+	overflow: hidden;
+}
+.slideInner {
+	// height: 100dvh;
+	position: relative;
+	left: 0;
+	margin-left: 0;
+}
+.slideInner a {
+	// display: block;
+	// height: 100dvh;
+	// background-size: cover;
+	// background-position: center center;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+.slideInner a div.img1 {
+	width: 1070px;
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
+    top: 50%;
+    margin-top: -45px;
+
+    @media only screen and (max-width: 600px) {
+        width: 35%;
+        top: 50%;
+        left: 25%;
+        right: 25%;
+        margin: auto;
+    }
+}
+.slideInner a div.img2 {
+	width: 1070px;
+	position: absolute;
+	top: 557px;
+	left: 50%;
+}
+.slideInner .slide3 .img2{
+	top: 200px;
+}
+.slideInner .slide3 .img3{
+	width: 181px;
+	height: 286px;
+	position: absolute;
+	left: 50%;
+	margin-left: 330px;
+	top: 330px;
+}
+.nav {
+	width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+}
+.navListBox {
+	position: absolute;
+	left: 50%;
+	bottom: 15%;
+	z-index: 99;
+    width: 200px !important;
+    margin:auto;
+}
+.navListBox li {
+	width: 20px;
+	height: 10px;
+	float: left;
+	margin-left: 5px;
+	overflow: hidden;
+}
+.navListBox li:first-child {
+	margin-left: 0;
+}
+.navListBox li a {
+	display: block;
+	width: 200px;
+	height: 3px;
+	background-color: #ffffff50;
+	box-shadow: 0 0 5px #666 inset;
+}
+.navListBox li a.active {
+	background-color: #000000;
+}
+.mex-banner-group__button-left{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 8px;
+    margin-left: -180px;
+    transition: 1s;
+    
+    &:hover{
+        margin-left: 0;
+        transition: 1s;
+
+        @media only screen and (max-width: 600px) {
+            margin-left: -180px;
+        }
+    }
+
+    .mex-banner-group__icon-button{
+        font-size: 1.6rem;
+        color: white;
+        border: 2px solid #fff;
+        border-radius: 30px;
+        width: 40px;
+        height: 40px;
+        padding: 0px 0px 0px 10px;
+    }
+}
+.mex-banner-group__button-right{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-right: -180px;
+    padding-left: 15px;
+    transition: 1s;
+
+    &:hover{
+        margin-right: 0;
+        transition: 1s;
+        @media only screen and (max-width: 600px) {
+            margin-right: -180px;
+        }
+    }
+    
+    .mex-banner-group__icon-button{
+        font-size: 1.6rem;
+        color: white;
+        border: 2px solid #fff;
+        border-radius: 30px;
+        width: 40px;
+        height: 40px;
+        padding: 0px 0px 0px 10px;
+    }
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+    margin-bottom: 1.5em;
+}
