@@ -6,21 +6,21 @@ $primary : #000;
 
 .slides {
 	width: 100%;
-	// height: 100dvh;
+	height: 100dvh;
 	position: relative;
 	overflow: hidden;
 }
 .slideInner {
-	// height: 100dvh;
+	height: auto;
 	position: relative;
 	left: 0;
 	margin-left: 0;
 }
 .slideInner a {
-	// display: block;
-	// height: 100dvh;
-	// background-size: cover;
-	// background-position: center center;
+	display: block;
+	height: 100dvh;
+	background-size: cover;
+	background-position: center center;
 	position: relative;
 	text-align: center;
 	z-index: 1;
@@ -161,3 +161,4 @@ p,
 pre {
     margin-bottom: 1.5em;
 }
+

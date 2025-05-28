@@ -37,12 +37,10 @@ $get_field = get_field($a['get_field']);
 
     // เพิ่ม aTag เข้าไปใน container
     document.getElementById("container").appendChild(aTag);
-    console.log(aTag,'ggg');
     var moveElem = document.querySelectorAll(".moveElem > img");
     setTimeout(function() {
-
         moveElem.style.opacity = "0.5";
-}, 10000); 
+    }, 10000); 
     
 </script>
 <div class="slides">
@@ -60,9 +58,12 @@ $get_field = get_field($a['get_field']);
                     </a>
 
                 <?php else : ?>
-                    <a style="background: url(<?php echo $item["background_image"]; ?>) no-repeat; background-size:cover; background-position:center; width:100%;">
+                    <a>
                         <div class="moveElem img1" rel="0,easeInOutExpo">
                             <img id="" src="<?php echo $item["image_text"]; ?>">
+                        </div>
+                        <div>
+                            <img src="<?php echo $item["background_image"]; ?>" class="object-cover w-full h-screen">                            
                         </div>
                     </a>
 
